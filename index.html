@@ -1,104 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Steckbrief Löwe</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #49351c;
-            padding: 30px;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #011985;
+        margin: 0;
+        padding: 25px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #000000;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        box-shadow: 0 3px 8px #000000;
+      }
+
+      .box h2 {
+        color: #000000;
+        margin-top: 0;
+      }
+
+      .bild {
+        text-align: center;
+        grid-column: span 2;
+      }
+
+      img {
+        width: 280px;
+        border-radius: 12px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
         }
 
-        .steckbrief {
-            max-width: 600px;
-            margin: auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px #c9a66b;
+        .bild {
+          grid-column: span 1;
         }
-
-        h1 {
-            text-align: center;
-            color: #b56b16;
-        }
-
-        img {
-            display: block;
-            width: 250px;
-            margin: 15px auto;
-            border-radius: 12px;
-        }
-
-        h2 {
-            color: #117194;
-        }
-
-        li {
-            margin: 8px;
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-<div class="steckbrief">
-
+  <body>
     <h1>🦁 Steckbrief: Der Löwe</h1>
+    <img src="Löwe1.jpg" 300 />
+    <div class="container">
+      <div class="box bild">
+        <h2>Der Löwe</h2>
+      </div>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"
-         alt="Ein Löwe">
-         img src="Löwe1.jpg" alt="Ein Löwe" width="300">
+      <div class="box">
+        <h2>📋 Allgemeine Informationen</h2>
+        <p><b>Name:</b> Löwe</p>
+        <p><b>Lateinischer Name:</b> Panthera leo</p>
+        <p><b>Tierklasse:</b> Säugetier</p>
+        <p><b>Familie:</b> Katzen</p>
+      </div>
+      <img src="Löwe2.jpg" alt="Ein Löwe" width="300" />
 
-    <h2>Allgemeine Informationen</h2>
+      <div class="box">
+        <h2>🌍 Lebensraum</h2>
+        <p>Löwen leben hauptsächlich in Afrika.</p>
+        <p>Einige Löwen leben auch in Indien.</p>
+        <p>Sie wohnen vor allem in Savannen und Graslandschaften.</p>
+      </div>
 
-    <ul>
-        <li><b>Name:</b> Löwe</li>
-        <li><b>Lateinischer Name:</b> Panthera leo</li>
-        <li><b>Tierklasse:</b> Säugetier</li>
-        <li><b>Familie:</b> Katzen</li>
-        <li><b>Lebensraum:</b> Afrika, teilweise Indien</li>
-        <li><b>Lebenserwartung:</b> Etwa 10–15 Jahre in freier Wildbahn</li>
-    </ul>
+      <div class="box">
+        <h2>🦁 Aussehen</h2>
+        <p><b>Fell:</b> Gelblich bis sandfarben</p>
+        <p><b>Gewicht:</b> 120–250 kg</p>
+        <p><b>Länge:</b> Bis zu 2,5 Meter</p>
+        <p><b>Besonderheit:</b> Männchen haben eine Mähne.</p>
+      </div>
 
-    <h2>Aussehen</h2>
-    <ul>
-        <li><b>Fell:</b> Gelblich bis sandfarben</li>
-        <li><b>Gewicht:</b> Etwa 120–250 kg</li>
-        <li><b>Länge:</b> Bis zu 2,5 Meter (ohne Schwanz)</li>
-        <li><b>Besonderheit:</b> Männchen haben eine große Mähne.</li>
-    </ul>
+      <div class="box">
+        <h2>🍖 Nahrung</h2>
+        <p>Löwen sind Fleischfresser.</p>
+        <p>Sie fressen zum Beispiel:</p>
+        <ul>
+          <li>Zebras</li>
+          <li>Antilopen</li>
+          <li>Büffel</li>
+        </ul>
+      </div>
 
-    <h2>Nahrung</h2>
-    <p>
-        Löwen sind Fleischfresser. Sie fressen zum Beispiel
-        Zebras, Antilopen und Büffel.
-    </p>
+      <div class="box">
+        <h2>🐾 Lebensweise</h2>
+        <p>Löwen leben in Gruppen, die Rudel genannt werden.</p>
+        <p>Die Weibchen jagen häufig gemeinsam.</p>
+        <p>Löwen schlafen und ruhen bis zu 20 Stunden am Tag.</p>
+      </div>
 
-    <h2>Lebensweise</h2>
-    <p>
-        Löwen leben in Gruppen, die Rudel genannt werden.
-        Die Weibchen jagen häufig gemeinsam.
-        Löwen schlafen und ruhen bis zu 20 Stunden am Tag.
-    </p>
+      <div class="box">
+        <h2>⭐ Besonderheiten</h2>
+        <ul>
+          <li>Sehr lautes Brüllen</li>
+          <li>Gutes Gehör</li>
+          <li>Kräftige Beine</li>
+          <li>Gute Jäger</li>
+        </ul>
+      </div>
 
-    <h2>Besondere Fähigkeiten</h2>
-    <ul>
-        <li>Sehr lautes Brüllen</li>
-        <li>Gutes Gehör</li>
-        <li>Kräftige Beine</li>
-        <li>Gute Jäger</li>
-    </ul>
-
-    <h2>Wusstest du schon?</h2>
-    <p>
-        Das Brüllen eines Löwen kann man mehrere Kilometer
-        weit hören!
-    </p>
-
-</div>
-
-</body>
+      <div class="box">
+        <h2>💡 Wusstest du schon?</h2>
+        <p>Das Brüllen eines Löwen kann man mehrere Kilometer weit hören!</p>
+      </div>
+    </div>
+  </body>
 </html>
